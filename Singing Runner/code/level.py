@@ -50,7 +50,7 @@ class Level:
         player_x = player.rect.centerx
         direction_x = player.direction.x
 
-        if player_x > screen_width - (screen_width/4) and direction_x > 0: # checks if player has gone beyond a certain point
+        if player_x > screen_width - (screen_width/2) and direction_x > 0: # checks if player has gone beyond a certain point
             self.world_shift = -8
             player.speed = 0
         else:
